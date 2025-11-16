@@ -5,20 +5,20 @@
 class Rerune < Formula
   desc "Command-line tool for rerune"
   homepage "https://github.com/BasalBit/rerune-cli"
-  version "0.7.4"
+  version "0.7.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://basalbit.github.io/rerune-releases/0.7.4/rerune_0.7.4_darwin_amd64.tar.gz"
-      sha256 "ed1d393633d5682d7236a97608c60d757bec3a071994fcbdced1045cd42a3dc4"
+      url "https://basalbit.github.io/rerune-releases/0.7.5/rerune_0.7.5_darwin_amd64.tar.gz"
+      sha256 "ca4779c8b4cf1f2e672c388bbbcd0c33645c304076c069036194020310b10c0d"
 
       def install
         bin.install "rerune"
       end
     end
     if Hardware::CPU.arm?
-      url "https://basalbit.github.io/rerune-releases/0.7.4/rerune_0.7.4_darwin_arm64.tar.gz"
-      sha256 "1f582d697746399b0ec36413f39b13fa3ec2fac6b6ef444af4b6ba0ecae720d5"
+      url "https://basalbit.github.io/rerune-releases/0.7.5/rerune_0.7.5_darwin_arm64.tar.gz"
+      sha256 "299306a3a606d397d5bdc44124ace7865e78d97ed6e4a56fd213ead6fbd122a4"
 
       def install
         bin.install "rerune"
@@ -28,15 +28,15 @@ class Rerune < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://basalbit.github.io/rerune-releases/0.7.4/rerune_0.7.4_linux_amd64.tar.gz"
-      sha256 "60b31683f415d859e8a6ad786627bf008de3a5ad1ee858d4672c330e36159932"
+      url "https://basalbit.github.io/rerune-releases/0.7.5/rerune_0.7.5_linux_amd64.tar.gz"
+      sha256 "a4fdb2dfd5c10ebfc8dd52cf38370fa4ffe52a3936acadbf3d1093c6993137d8"
       def install
         bin.install "rerune"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://basalbit.github.io/rerune-releases/0.7.4/rerune_0.7.4_linux_arm64.tar.gz"
-      sha256 "618d93a01656186f7517796855606caa4b1746018194c813f2439b28016bd262"
+      url "https://basalbit.github.io/rerune-releases/0.7.5/rerune_0.7.5_linux_arm64.tar.gz"
+      sha256 "3995d979678ab33a8178a69642249d9c700d8f5bdb2a7c20b46c705e39dfb80c"
       def install
         bin.install "rerune"
       end
