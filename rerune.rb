@@ -5,20 +5,20 @@
 class Rerune < Formula
   desc "Command-line tool for rerune"
   homepage "https://github.com/BasalBit/rerune-cli"
-  version "0.14.0"
+  version "0.14.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://basalbit.github.io/rerune-releases/v0.14.0/rerune_0.14.0_darwin_amd64.tar.gz"
-      sha256 "55285cd019346c60d7becaa5f3ba73a94ccdbb8e920c95dd8f37d7d27744748c"
+      url "https://basalbit.github.io/rerune-releases/v0.14.1/rerune_0.14.1_darwin_amd64.tar.gz"
+      sha256 "08951d57d93db76b8c0151326ac1aae56de211256b0fe3c113656abb6669d684"
 
       def install
         bin.install "rerune"
       end
     end
     if Hardware::CPU.arm?
-      url "https://basalbit.github.io/rerune-releases/v0.14.0/rerune_0.14.0_darwin_arm64.tar.gz"
-      sha256 "3d2817aa217453ff62be2cf9d13a855fa55d6e1a049e9378cbefabd5f73c3e38"
+      url "https://basalbit.github.io/rerune-releases/v0.14.1/rerune_0.14.1_darwin_arm64.tar.gz"
+      sha256 "e0eb542948fc8a85841ace607a5ee4a2b63f16c3fb0b9e60c18e9153f3b93043"
 
       def install
         bin.install "rerune"
@@ -28,15 +28,15 @@ class Rerune < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://basalbit.github.io/rerune-releases/v0.14.0/rerune_0.14.0_linux_amd64.tar.gz"
-      sha256 "b7249e793cb4434e9dd89d8bdae1fee9a89c3d75b811604c588b53c735f51aac"
+      url "https://basalbit.github.io/rerune-releases/v0.14.1/rerune_0.14.1_linux_amd64.tar.gz"
+      sha256 "8d09cafd1016da6d9d311d072385f5d3d4b2149b5c0c194716fcb03f512c1764"
       def install
         bin.install "rerune"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://basalbit.github.io/rerune-releases/v0.14.0/rerune_0.14.0_linux_arm64.tar.gz"
-      sha256 "0d70825feb056b8249c39597f1b153c647e4a7a37bcb29a9607c4c90b33bfb75"
+      url "https://basalbit.github.io/rerune-releases/v0.14.1/rerune_0.14.1_linux_arm64.tar.gz"
+      sha256 "4c5988d672a27235805d95d67b160b97eafe30511bcb8bb6e15b2f47d616ab26"
       def install
         bin.install "rerune"
       end
