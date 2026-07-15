@@ -5,20 +5,20 @@
 class Rerune < Formula
   desc "Command-line tool for rerune"
   homepage "https://github.com/BasalBit/rerune-cli"
-  version "1.0.2"
+  version "1.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://raw.githubusercontent.com/BasalBit/rerune-releases/main/v1.0.2/rerune_1.0.2_darwin_amd64.tar.gz"
-      sha256 "4a8467f5b39cfb22a19d1e49d835b6c87b17648cfc636c9405ca7b08810e19f0"
+      url "https://raw.githubusercontent.com/BasalBit/rerune-releases/main/v1.0.3/rerune_1.0.3_darwin_amd64.tar.gz"
+      sha256 "9efc6af4246769b2c9917754774737e007765d7a43e6f6595e363b289658887a"
 
       def install
         bin.install "rerune"
       end
     end
     if Hardware::CPU.arm?
-      url "https://raw.githubusercontent.com/BasalBit/rerune-releases/main/v1.0.2/rerune_1.0.2_darwin_arm64.tar.gz"
-      sha256 "ba348f5a5ae9f837dab90ef483252a8d0ce99fec0d24344f98ce6ea70b39934a"
+      url "https://raw.githubusercontent.com/BasalBit/rerune-releases/main/v1.0.3/rerune_1.0.3_darwin_arm64.tar.gz"
+      sha256 "e3f1b7cf8b816a9128283a10dd113b3b7d29fc7443c8fc7cc609ae485712cd01"
 
       def install
         bin.install "rerune"
@@ -28,15 +28,15 @@ class Rerune < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://raw.githubusercontent.com/BasalBit/rerune-releases/main/v1.0.2/rerune_1.0.2_linux_amd64.tar.gz"
-      sha256 "75a6effc2fa5e1694f9f61030a1eef5007709d992b6d1c7b74dfd68491f0acf8"
+      url "https://raw.githubusercontent.com/BasalBit/rerune-releases/main/v1.0.3/rerune_1.0.3_linux_amd64.tar.gz"
+      sha256 "8787a022a8847ca324eb53efa258986fb6c07b460d7e7a8422ed75fc318309d7"
       def install
         bin.install "rerune"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://raw.githubusercontent.com/BasalBit/rerune-releases/main/v1.0.2/rerune_1.0.2_linux_arm64.tar.gz"
-      sha256 "69be451bc88fb08cc480670ba9234bc81b761a7d8615826114f306a8ef83590d"
+      url "https://raw.githubusercontent.com/BasalBit/rerune-releases/main/v1.0.3/rerune_1.0.3_linux_arm64.tar.gz"
+      sha256 "e7f96acf89a7e8fd307cebf54e7e048b442210522115fac71fb0c2e5460b7636"
       def install
         bin.install "rerune"
       end
