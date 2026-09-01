@@ -45,6 +45,6 @@ class Rerune < Formula
   end
 
   test do
-    system "#{bin}/rerune", "--version"
+    system "#{bin}/rerune", "version"
   end
 end
