@@ -5,7 +5,7 @@
 class Rerune < Formula
   desc "Command-line tool for rerune"
   homepage "https://github.com/BasalBit/rerune-cli"
-  version "1.0.10"
+  version "1.0.11"
   license "MIT"
 
   on_macos do
