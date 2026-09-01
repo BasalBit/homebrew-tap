@@ -11,7 +11,7 @@ class Rerune < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://raw.githubusercontent.com/BasalBit/rerune-releases/main/v1.0.11/rerune_1.0.11_darwin_amd64.tar.gz"
-      sha256 "519285c7320d7fb0eed35dacb7173bb9e9b30e1f0edccf980b4b080440b8a9e2"
+      sha256 "acab7d94fc9d477a40bb94b2a9ca276a26207eaf4587f008b424e4cabf450824"
 
       def install
         bin.install "rerune"
@@ -19,7 +19,7 @@ class Rerune < Formula
     end
     if Hardware::CPU.arm?
       url "https://raw.githubusercontent.com/BasalBit/rerune-releases/main/v1.0.11/rerune_1.0.11_darwin_arm64.tar.gz"
-      sha256 "09f24dec01b6b493f8b34df1fe07ba682d09fe46eb1d89fd497700f73b019dd7"
+      sha256 "496c047ebf5f9a68ce666521725429b8e0445a893c807e876ae7943a77e2bbd3"
 
       def install
         bin.install "rerune"
@@ -30,14 +30,14 @@ class Rerune < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://raw.githubusercontent.com/BasalBit/rerune-releases/main/v1.0.11/rerune_1.0.11_linux_amd64.tar.gz"
-      sha256 "13d7f85e49b56ad342a4e69531f9ef9354e2033fb1e7ff141377d3d10dcf5407"
+      sha256 "7c32cc9c684f9050b5093c6627b2d1847e7e366e4e1946a367402fd7c834c232"
       def install
         bin.install "rerune"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://raw.githubusercontent.com/BasalBit/rerune-releases/main/v1.0.11/rerune_1.0.11_linux_arm64.tar.gz"
-      sha256 "33b52a2d21150da3fdbd87e9ea66e7735eaad8f9e041ba4f0da01c752aac71a4"
+      sha256 "769adf907bb2fd703c54a31a50b6d1fa34fbece65a6f7688a5892d04df4a564c"
       def install
         bin.install "rerune"
       end
